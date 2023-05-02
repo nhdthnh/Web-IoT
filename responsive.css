@@ -1,0 +1,168 @@
+@media (max-width: 1023px){
+    *{
+        box-sizing: border-box;
+        
+    }
+
+    body{
+        background-image: url("https://wallpaperaccess.com/full/366398.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        }
+    .header {
+        height: 75px;
+        background-image: url(/img/intemp-connected-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: luminosity;
+        border-radius: 0 0 3px 3px;
+        box-shadow: 2px 2px 2px 2px #eaeaea;
+        position: fixed;
+        width: 120%;
+        z-index: 9999;
+        top: -3px;
+        left: -3px;
+        }
+        
+        .header .li {
+            padding: 4px 8px;
+            font-size: 14px;
+        }
+        .logo {
+            left: 0;
+            height: 62px;
+            top: 0;
+            position: absolute;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        .interface{
+            top: 76px;
+            left: 45px;
+            position: relative;
+
+        }
+        .device {
+            background-color: #f5f3f3e8;
+            box-shadow: 2px 2px #d2cdcd;
+            border-radius: 20px;
+            width: 80%;
+            text-align: center;
+            height: 252px;
+            display: block;
+        }
+
+        .img_device{
+            width:60%; 
+            margin-top: 10px; 
+            margin-bottom: 50px; 
+            display: flex; 
+            position: absolute;
+			right: calc(60%/3);
+        }
+
+
+   
+        
+        .sensor {
+            background-color: #f5f3f3e8;
+            box-shadow: 2px 2px #d2cdcd;
+            border-radius: 20px;
+            position: relative;
+            text-align: center;
+            display: block;
+            font-size: 15px;
+            height: 60%;
+            margin-top: 40px;
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 95%;
+        }
+        .menu{
+            width: 80%;
+            background: rgba(255, 255, 255, 0.6);
+            height: calc(100% - 90px);
+            box-shadow: 2px 2px 2px 2px #ccc;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-top: 9px;
+            position: fixed; /* thêm thuộc tính position để menu luôn hiển thị ở đúng vị trí */
+            top: 75px; /* hiển thị ở đầu trang */
+            right: 0; /* hiển thị ở bên phải */
+            transform: translateX(-100%); /* di chuyển menu ra ngoài khung hình */
+            transition: transform 0.5s ease-in-out; /* chuyển động mượt mà khi hiển thị menu */
+            display: block;
+            z-index: 999;
+            display: block;
+            text-align: center;
+          }
+          .menu.show{
+            transform: translateX(0); /* hiển thị menu vào khung hình */
+          }          
+          .room{
+            height: calc(100% /3);
+            cursor: pointer;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            border-radius: 20px;
+            margin-bottom: 10px;
+            position: relative;
+            text-align: center;
+        }
+        .room_name{
+            font-size: 20px;
+            font-weight: 800;
+            
+            top: 10px;
+        }
+        .picroom{
+            width: calc(100%/1.5);
+            height: 50%;
+            display: flex;
+            padding-top: 0px;
+            margin-left: auto;
+            margin-right: auto ;
+            left: calc(100%/6);
+            top: calc(100%/3);
+            position: absolute;
+        }
+        #footer {
+            border-radius: 20px;
+            height: 80px;
+            width: 100%;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            line-height: 1.5;
+            position: relative;
+            display: block;
+            bottom: -51px;
+        } 
+        .room.active {
+            opacity: 1;
+            background-color: #c1bdbd;
+          }
+        .social-list{
+            font-size: 25px;
+            color: #ffffff;
+        }
+        .social-list a{
+            text-decoration: none;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .copyright{
+            opacity: 0.8;
+            margin-top: 10px;
+            color: #fff;
+        }
+}
